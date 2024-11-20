@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import TeamMember from '../../../components/TeamMember/TeamMember';
 import styles from './TeamSection.module.css';
 import dentista from '../../../utils/assets/dentist.png';
@@ -72,6 +73,9 @@ const TeamSection = ({ id }) => {
       </div>
     </section>
   );
+};
+TeamSection.propTypes = {
+  id: PropTypes.string.isRequired,
 };
 
 export default TeamSection;
