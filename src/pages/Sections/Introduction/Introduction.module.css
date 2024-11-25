@@ -4,47 +4,50 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 20px;
+  padding: 0px 30px 80px 30px;
   text-align: left;
   background-image: url('../../../utils/assets/background.png');
-  background-size: 100vw;
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 90vh;
+  min-height: 80vh;
   gap: 15%;
 }
 
 .logo {
   position: relative;
-  margin-bottom: 100px;
+  height: 50% !important;
+  width: auto !important;
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
   max-width: 850px;
   line-height: 1.5;
+  gap: 0.5rem;
 }
 
 .title {
   font-size: 2.5em;
   font-weight: bold;
-  margin-bottom: 30px;
 }
 
 .description {
   font-size: 1.5em;
-  margin-bottom: 20px;
 }
 
 .a {
   background-color: #0455BF;
   color: white;
-  padding: 20px 50px;
+  padding: 1% 2%;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
-  /* letter-spacing: 5px; */
   text-decoration: none;
   border: none;
+  width: fit-content !important;
+  height: auto;
 
   .button {
     color: #ffffff;
@@ -68,16 +71,22 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .heroContainer {
     flex-direction: column;
     text-align: center;
     gap: 20px;
     min-height: 75vh;
   }
+  
+  .content{
+    align-items: center;
+    gap: 0.8rem;
+  }
 
   .logo {
-    width: 150px;
+    max-width: 60%;
+    height: auto;
   }
 
   .title {

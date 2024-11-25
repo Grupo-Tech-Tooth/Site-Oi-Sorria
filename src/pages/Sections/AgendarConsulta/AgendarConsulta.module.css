@@ -78,7 +78,8 @@
 }
 
 .submitButton {
-  width: 30%;
+  min-width: 30%;
+  width: fit-content;
   padding: 10px;
   background-color: transparent;
   color: #4a90e2;
@@ -165,10 +166,6 @@
 
 .socialMedia a .icon {
   font-size: 2rem;
-}
-
-.socialMediaSection {
-  /* margin-top: 20px; */
 }
 
 .socialTitle {

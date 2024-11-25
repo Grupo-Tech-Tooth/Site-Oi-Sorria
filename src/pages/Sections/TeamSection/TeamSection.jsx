@@ -63,7 +63,7 @@ const TeamSection = ({ id }) => {
             }}
           >
             {teamMembers.map((member) => (
-              <div key={member.id} className={styles.teamMemberWrapper}>
+              <div key={member.id} className={`${styles.teamMemberWrapper} carousel-inner `}>
                 <TeamMember {...member} />
               </div>
             ))}

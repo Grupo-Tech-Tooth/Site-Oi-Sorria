@@ -3,7 +3,7 @@ import styles from './ProcedureStep.module.css';
 
 const ProcedureStep = ({ title, icon, description, highlight }) => {
   return (
-    <div className={`${styles.step} ${highlight ? styles.highlight : ''}`}>
+    <div className={`${styles.step} ${highlight ? styles.highlight : ''} col-md-6 col-lg-4`}>
       <div className={styles.icon}>
         <img src={icon} alt={`${title} Icon`} />
       </div>
