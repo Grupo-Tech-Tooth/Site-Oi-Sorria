@@ -53,7 +53,7 @@ const ProcedureList = ({ id }) => {
         <img src={tooth} alt="Ícone de Dente" className={styles.icon} />
         Nossos Procedimentos
       </h2>
-      <div className={styles.steps}>
+      <div className={`${styles.steps} row`}>
         {steps.map((step) => (
           <ProcedureStep
             key={step.id}
