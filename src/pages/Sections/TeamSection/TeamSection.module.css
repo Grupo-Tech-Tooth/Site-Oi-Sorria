@@ -12,7 +12,7 @@
 
 .carouselContainer {
   position: relative;
-  max-width: 70%;
+  max-width: 80%;
   margin: 0 10%;
   padding: 0 60px;
 }
@@ -32,7 +32,7 @@
   padding: 0 15px;
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .carouselButton {
@@ -55,7 +55,8 @@
   right: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
+  
   .sectionTitle {
     font-size: 3em;
     margin-bottom: 0px;
@@ -64,9 +65,21 @@
   .teamMemberWrapper {
     flex: 0 0 100%;
     margin-bottom: 30px;
+    flex: 0 0 calc(100% / 2); 
   }
 
-  .carousel {
+  .carouselButton {
+    transform: translateY(-10%) !important;
+  }
+}
+
+@media (max-width: 850px){
+  .teamMemberWrapper{
+    flex: 0 0 calc(100% / 1);
+  }
+
+  .carouselContainer{
     width: 100%;
+    padding: 20px;
   }
 }

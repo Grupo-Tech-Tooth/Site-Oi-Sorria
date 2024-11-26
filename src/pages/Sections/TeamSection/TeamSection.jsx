@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import TeamMember from '../../../components/TeamMember/TeamMember';
 import styles from './TeamSection.module.css';
 import dentista from '../../../utils/assets/dentist.png';
@@ -15,10 +16,10 @@ const TeamSection = ({ id }) => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 850);
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    const handleResize = () => setIsMobile(window.innerWidth <= 850);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -62,7 +63,7 @@ const TeamSection = ({ id }) => {
             }}
           >
             {teamMembers.map((member) => (
-              <div key={member.id} className={styles.teamMemberWrapper}>
+              <div key={member.id} className={`${styles.teamMemberWrapper} carousel-inner `}>
                 <TeamMember {...member} />
               </div>
             ))}
@@ -72,6 +73,9 @@ const TeamSection = ({ id }) => {
       </div>
     </section>
   );
+};
+TeamSection.propTypes = {
+  id: PropTypes.string.isRequired,
 };
 
 export default TeamSection;

@@ -1,0 +1,95 @@
+.notFound {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.navbar {
+  width: 86vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0455bf;
+  font-family: "Montserrat", sans-serif;
+  height: 80px;
+  position: fixed;
+  z-index: 1000;
+  padding: 0 7%;
+}
+
+.navbarLogo {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.navbarLogo img {
+  width: 60px;
+}
+
+.navbarButton {
+  background-color: #ffffff;
+  color: #0453bb;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 6px 1%;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  left: 20px;
+  /* margin-right: 20px; */
+  border: 1px solid #ffffff;
+}
+
+.navbarButton:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  gap: 20px;
+
+  .title {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #0455bf;
+  }
+
+  .subtitle {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #0455bf;
+  }
+
+  .text {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #0455bf;
+  }
+
+  .link {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #0455bf;
+    text-decoration: none;
+  }
+}
+
+.footer {
+  margin: 0;
+  padding: 0;
+}

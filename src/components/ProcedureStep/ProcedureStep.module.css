@@ -6,8 +6,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 25%;
-  height: 190px;
+  /* width: 25%; */
+  height: 210px;
   border: 1px solid #0455BF;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   transition: transform 0.2s;
@@ -43,7 +43,7 @@
 .highlight {
   background-color: #0455BFcc;
   color: white;
-  height: 210px;
+  height: 230px;
   border: 1px solid #0455BFcc;
 }
 
@@ -55,8 +55,9 @@
   color: #f0f0f0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .step {
-    width: 250px;
+    width: auto;
+    height: 320px;
   }
 }

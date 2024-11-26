@@ -5,12 +5,13 @@
 }
 
 .sectionTitle {
-  font-size: 2em;
+  font-size: 2rem;
   margin-bottom: 30px;
   color: #0044cc;
   position: relative;
-  left: 8%;
   font-weight: bold;
+  width: 100%;
+  padding: 0 5%;
 }
 
 .sectionTitle .icon {
@@ -25,14 +26,23 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 60px 0;
+  width: 90%;
+  margin: 0 5%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .steps {
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
   }
 
+  .sectionTitle{
+    padding: 0 10%;
+  }
+}
+
+@media (max-width: 850px){
   .sectionTitle .icon {
     display: none;
   }

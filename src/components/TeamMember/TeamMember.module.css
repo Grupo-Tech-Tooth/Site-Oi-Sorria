@@ -3,7 +3,7 @@
   border-radius: 15px;
   padding: 150px 20px 20px;
   color: white;
-  width: 90%;
+  min-width: 100% !important;
   height: 450px;
   /* Altura fixa para todos os cards */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -43,14 +43,14 @@
 
 .memberDescription {
   font-size: 1.3em;
-  padding: 15px;
-  overflow-y: auto;
+  padding: 5px;
   flex-grow: 1;
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
   line-height: 1.6;
   letter-spacing: 1.2px;
   text-align: start;
+  text-wrap: wrap;
 }
 
 /* Estiliza a barra de rolagem para navegadores WebKit (Chrome, Safari, etc.) */
@@ -67,10 +67,10 @@
   border-radius: 3px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .teamMember {
-    height: 350px;
-    /* Ajuste a altura para telas menores */
+    height: 480px;
+    padding-bottom: 1rem;
   }
 
   .imageWrapper {
@@ -88,10 +88,9 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 850px) {
   .teamMember {
     height: 300px;
-    /* Ajuste a altura para telas muito pequenas */
     padding: 100px 20px 20px;
   }
 
@@ -107,5 +106,12 @@
 
   .memberDescription {
     font-size: 1em;
+  }
+}
+
+@media (max-width: 850px){
+  .teamMember {
+    height: 500px;
+    width: 200px;
   }
 }
