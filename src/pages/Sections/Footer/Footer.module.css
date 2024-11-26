@@ -143,7 +143,7 @@
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .footer {
         padding: 2rem 2rem;
     }

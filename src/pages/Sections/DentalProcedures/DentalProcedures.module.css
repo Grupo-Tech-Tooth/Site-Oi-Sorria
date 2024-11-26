@@ -75,7 +75,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .dental-procedures {
     flex-direction: column;
     padding: 30px;
@@ -98,7 +98,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 850px) {
   .text-container h2 {
     font-size: 1.6rem;
   }
