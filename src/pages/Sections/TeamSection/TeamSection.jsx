@@ -3,15 +3,21 @@ import PropTypes from 'prop-types';
 import TeamMember from '../../../components/TeamMember/TeamMember';
 import styles from './TeamSection.module.css';
 import dentista from '../../../utils/assets/dentist.png';
+import yedaImage from '../../../utils/assets/yeda.png';
+import hsuImage from '../../../utils/assets/hsu.jpg';
+import suelenImage from '../../../utils/assets/suelen.jpg';
+import brunaImage from '../../../utils/assets/bruna.jpg';
+import gabrielaImage from '../../../utils/assets/gabriela.jpg';
+import thalitaImage from '../../../utils/assets/thalita.jpg';
 
 const TeamSection = ({ id }) => {
   const teamMembers = [
-    { id: 1, image: dentista, name: 'Dra. Yeda Uyema', description: 'Especialista em clínica geral, destaca-se pelo atendimento humanizado e atenção aos detalhes.' },
-    { id: 2, image: dentista, name: 'Dra. Suele Silva', description: 'Especialista em ortodontia, alia tecnologia avançada a um atendimento amigável.' },
-    { id: 3, image: dentista, name: 'Dra. Bruna Lima', description: 'Especialista em endodontia, é reconhecida por sua habilidade em tratamentos de canal.' },
-    { id: 4, image: dentista, name: 'Dr. Hsu Uyema', description: 'Especializado em clínica geral, cria um ambiente acolhedor e divertido para crianças.' },
-    { id: 5, image: dentista, name: 'Dra. Gabriela Rosa', description: 'Especialista em implantodontia, é focada na recuperação de sorrisos.' },
-    { id: 6, image: dentista, name: 'Dra. Thalita Victoria', description: 'Especialista em implantodontia, realiza implantes para devolver a autoestima aos pacientes.' },
+    { id: 1, image: yedaImage, name: 'Dra. Yeda Uyema', description: 'Especialista em clínica geral, destaca-se pelo atendimento humanizado e atenção aos detalhes.' },
+    { id: 2, image: suelenImage, name: 'Dra. Suele Silva', description: 'Especialista em ortodontia, alia tecnologia avançada a um atendimento amigável.' },
+    { id: 3, image: brunaImage, name: 'Dra. Bruna Lima', description: 'Especialista em endodontia, é reconhecida por sua habilidade em tratamentos de canal.' },
+    { id: 4, image: hsuImage, name: 'Dr. Hsu Uyema', description: 'Especializado em clínica geral, cria um ambiente acolhedor e divertido para crianças.' },
+    { id: 5, image: gabrielaImage, name: 'Dra. Gabriela Rosa', description: 'Especialista em implantodontia, é focada na recuperação de sorrisos.' },
+    { id: 6, image: thalitaImage, name: 'Dra. Thalita Victoria', description: 'Especialista em implantodontia, realiza implantes para devolver a autoestima aos pacientes.' },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
